@@ -111,14 +111,7 @@ header{
     text-align:start;
 
 }
-#competences{
-    grid-area: etiq_comp;
-    background-color: #F8F9FA;
-    border: 3px black solid;
-    border-radius: 15px;
-    padding: 10px;
-    
-}
+
 #divers{
     grid-area: etiq_divers;
     background-color: #F8F9FA;
@@ -128,15 +121,36 @@ header{
     text-align: start ;
 
 }
-#comp_RT{
-    text-align:start;
+
+#competences {
+    grid-area: etiq_comp;
+    background-color: #F8F9FA;
+    border: 3px black solid;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Organisation en colonne */
+    align-items: center; /* Centre le titre */
 }
-#comp_PRT{
-    text-align:start;
+
+#competences h2 {
+    text-align: center;
+    width: 100%;
 }
-#comp_hum{
-    text-align:start;
+
+#flexcomp {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+    gap: 15px;
+    width: 100%;
 }
+
+#comp_RT, #comp_PRT, #comp_hum {
+    background-color: #F8F9FA;
+    padding: 15px;
+    text-align: start;
+}
+
 
 
 #conteneur_gridFORMA{
@@ -225,7 +239,7 @@ header{
 #mainexpro ul{
     text-align: start;
 }
-#bouton{
+#bouton {
     text-align: center;
     border: 2px black solid;
     border-radius: 15px;
@@ -236,20 +250,13 @@ header{
     bottom: 0%; 
     left: 50%; 
     transform: translate(-50%); 
-    
-    
 }
-#bouton:hover{
-    scale: 1.1;
-    text-align: center;
+
+#bouton:hover {
     border: 3px white solid;
     border-radius: 15px;
-    
-    position: relative;
-    bottom: 0%; 
-    left: 50%; 
-    transform: translate(-50%); 
 }
+
 a{
     text-decoration: none;
     color: black;
