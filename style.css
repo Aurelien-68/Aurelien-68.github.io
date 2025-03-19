@@ -1,0 +1,279 @@
+*{
+    font-family: arial;
+}
+ul{
+    line-height: 1.6;
+}
+p{
+    line-height: 1.6;
+}
+body{
+    background-color: #A8D0E6;
+    font-size: 20px;
+}
+
+#titre{
+    text-align: center;
+    background-color: #5DADE2;
+    margin: 10px 25% 10px 25%;
+    padding: 10px;
+    border: 5px white double;
+    border-radius: 15px;
+}
+
+
+#presentation{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    background-color: lightgray;
+    padding: 10px;  
+    margin: 5px 5px 5px 5px;  
+    
+}
+#portrait{
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    min-width: auto;
+    min-height: auto;
+    max-width: 100%; 
+    height: auto; 
+    margin-right: 20px; 
+    
+}
+#presentation ul{
+    list-style: none;
+    font-size: 20px;
+    margin: 0; 
+    padding: 0; 
+    text-align: left; 
+       
+}
+
+body{
+    text-align: center;
+    list-style-position:inside;
+}
+#flexcomp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#conteneur_grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+    "etiq_pres etiq_pres etiq_pres"  
+    "etiq_formation etiq_diplomes etiq_Expro"
+      "etiq_comp etiq_comp etiq_comp"
+      ". etiq_divers .";
+    
+}
+header{
+    grid-area: etiq_header;
+    background-color: lightgrey;
+    grid-area: etiq_pres;
+    margin: 0px 200px 10px 200px;
+    border: 3px black solid;
+    border-radius: 15px;
+}
+#formation{
+    grid-area: etiq_formation;
+    border: 3px black solid;
+    background-color: #F8F9FA;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: justify;
+}
+#diplomes{
+    grid-area: etiq_diplomes;
+    background-color: #F8F9FA;
+    border: 3px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    text-align:start;
+
+
+}
+#Expro{
+    grid-area: etiq_Expro;
+    background-color: #F8F9FA;
+    border: 3px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    text-align:start;
+
+}
+#competences{
+    grid-area: etiq_comp;
+    background-color: #F8F9FA;
+    border: 3px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    
+}
+#divers{
+    grid-area: etiq_divers;
+    background-color: #F8F9FA;
+    border: 3px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: start ;
+
+}
+#comp_RT{
+    text-align:start;
+}
+#comp_PRT{
+    text-align:start;
+}
+#comp_hum{
+    text-align:start;
+}
+
+
+#conteneur_gridFORMA{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto ;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+    "etiq_pres etiq_pres etiq_pres"  
+    "etiq_FORMA etiq_FORMA etiq_FORMA";
+    
+}
+#mainformation{
+    grid-area: etiq_FORMA;
+    background-color: #F8F9FA;
+    border: 3px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0px 200px 10px 200px;
+    
+
+}
+#mainformation ul{
+    text-align: start;
+}
+#conteneur_gridDIP{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+    "etiq_pres etiq_pres etiq_pres"  
+    "etiq_DIP etiq_DIP etiq_DIP"
+    ". etiq_brevet ."
+    ". etiq_bac ."; 
+}
+#maindiplomes{
+    grid-area: etiq_DIP;
+    background-color: #F8F9FA;
+    border: 3px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0px 200px 10px 200px;
+    
+}
+#maindiplomes ul{
+    text-align: start;
+}
+#resbrevet{
+    grid-area: etiq_brevet;
+    background-color: #F8F9FA;
+    border: 3px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0px 0px 10px 0px;
+}
+#resbac{
+    grid-area: etiq_bac;
+    background-color: #F8F9FA;
+    border: 3px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0px 0px 10px 0px;
+}
+
+#conteneur_gridEXPRO{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto  ;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+    "etiq_pres etiq_pres etiq_pres"  
+    "etiq_EXPRO etiq_EXPRO etiq_EXPRO"; 
+}
+#mainexpro{
+    grid-area: etiq_EXPRO;
+    background-color: #F8F9FA;
+    border: 3px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0px 200px 10px 200px;
+}
+#mainexpro ul{
+    text-align: start;
+}
+#bouton{
+    text-align: center;
+    border: 2px black solid;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #5DADE2;
+    width: 200px;
+    position: relative;
+    bottom: 0%; 
+    left: 50%; 
+    transform: translate(-50%); 
+    
+    
+}
+#bouton:hover{
+    scale: 1.1;
+    text-align: center;
+    border: 3px white solid;
+    border-radius: 15px;
+    
+    position: relative;
+    bottom: 0%; 
+    left: 50%; 
+    transform: translate(-50%); 
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+
+h2{
+    text-decoration: underline;
+}
+.lien_normal{
+    text-decoration: underline;
+    color: blue;
+}
+
+
+footer {
+    font-size: x-small;
+    text-align: center;
+  }
+
+  #formation, #diplomes, #Expro {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px;
+}
