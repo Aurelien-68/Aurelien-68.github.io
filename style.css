@@ -295,7 +295,6 @@ footer {
 }
 
 #main_en_quoi_comp{
-    grid-area: etiq_FORMA;
     background-color: #F8F9FA;
     border: 3px black solid;
     border-radius: 15px;
