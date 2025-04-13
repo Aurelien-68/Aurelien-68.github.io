@@ -73,7 +73,7 @@ body{
     "etiq_pres etiq_pres etiq_pres"  
     "etiq_formation etiq_diplomes etiq_Expro"
       "etiq_comp etiq_comp etiq_comp"
-      ". etiq_divers .";
+      "etiq_en_quoi_comp etiq_en_quoi_comp etiq_divers ";
     
 }
 header{
@@ -114,6 +114,15 @@ header{
 
 #divers{
     grid-area: etiq_divers;
+    background-color: #F8F9FA;
+    border: 3px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: start ;
+
+}
+#en_quoi_comp{
+    grid-area: etiq_en_quoi_comp;
     background-color: #F8F9FA;
     border: 3px black solid;
     border-radius: 15px;
@@ -284,3 +293,13 @@ footer {
     justify-content: space-between; 
     padding: 10px;
 }
+
+#main_en_quoi_comp{
+    grid-area: etiq_FORMA;
+    background-color: #F8F9FA;
+    border: 3px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0px 200px 10px 200px;
+}
+    
