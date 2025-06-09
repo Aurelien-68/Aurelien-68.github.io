@@ -250,7 +250,7 @@ header{
 #mainexpro ul{
     text-align: start;
 }
-#bouton {
+.bouton {
     text-align: center;
     border: 2px black solid;
     border-radius: 15px;
@@ -263,7 +263,7 @@ header{
     transform: translate(-50%); 
 }
 
-#bouton:hover {
+.bouton:hover {
     border: 3px white solid;
     border-radius: 15px;
 }
