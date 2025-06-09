@@ -312,3 +312,7 @@ footer {
     "etiq_pres etiq_pres etiq_pres"  
     "etiq_enquoi etiq_enquoi etiq_enquoi"; 
 }
+
+#main_en_quoi_comp ul li {
+  margin-bottom: 1em;
+}
