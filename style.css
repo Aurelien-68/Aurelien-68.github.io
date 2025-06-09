@@ -32,17 +32,14 @@ body{
     margin: 5px 5px 5px 5px;  
     
 }
-#portrait{
-    width: auto;
+#portrait {
+    width: 150px; /* ou une taille adaptée, à ajuster selon le rendu */
     height: auto;
-    border-radius: 50%;
-    min-width: auto;
-    min-height: auto;
-    max-width: 100%; 
-    height: auto; 
-    margin-right: 20px; 
-    
+    border-radius: 50%; /* optionnel : rend l'image ronde */
+    margin-right: 20px;
+    float: left; /* pour que le texte s'affiche à côté */
 }
+
 #presentation ul{
     list-style: none;
     font-size: 20px;
