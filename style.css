@@ -316,3 +316,12 @@ footer {
 #main_en_quoi_comp ul li {
   margin-bottom: 1em;
 }
+
+#preuves1{
+    grid-area: etiq_EXPRO;
+    background-color: #F8F9FA;
+    border: 3px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0px 200px 10px 200px;
+}
