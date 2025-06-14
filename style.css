@@ -325,3 +325,81 @@ footer {
     padding: 10px;
     margin: 0px 200px 10px 200px;
 }
+
+#stand_CEC {
+      width: 100%;
+      height: auto;
+      display: block;
+}
+
+#preuves2{
+    grid-area: etiq_EXPRO;
+    background-color: #F8F9FA;
+    border: 3px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0px 200px 10px 200px;
+}
+
+.download-link {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #91C6E3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.download-link:hover {
+    background-color: #0056b3;
+}
+
+#preuves3{
+    grid-area: etiq_EXPRO;
+    background-color: #F8F9FA;
+    border: 3px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0px 200px 10px 200px;
+}
+#preuves4{
+    grid-area: etiq_EXPRO;
+    background-color: #F8F9FA;
+    border: 3px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0px 200px 10px 200px;
+}
+#preuves5{
+    grid-area: etiq_EXPRO;
+    background-color: #F8F9FA;
+    border: 3px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0px 200px 10px 200px;
+}
+#preuves6{
+    grid-area: etiq_EXPRO;
+    background-color: #F8F9FA;
+    border: 3px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0px 200px 10px 200px;
+}
+#preuves7{
+    grid-area: etiq_EXPRO;
+    background-color: #F8F9FA;
+    border: 3px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0px 200px 10px 200px;
+}
+#preuves8{
+    grid-area: etiq_EXPRO;
+    background-color: #F8F9FA;
+    border: 3px black solid;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0px 200px 10px 200px;
+}
