@@ -28,9 +28,9 @@ body{
     align-items: center;
     justify-content: start;
     background-color: lightgray;
-    padding: 10px;  
-    margin: 5px 5px 5px 5px;  
-    
+    padding: 10px;
+    margin: 5px 5px 5px 5px;
+
 }
 #portrait {
     width: 150px; /* ou une taille adaptée, à ajuster selon le rendu */
@@ -43,10 +43,10 @@ body{
 #presentation ul{
     list-style: none;
     font-size: 20px;
-    margin: 0; 
-    padding: 0; 
-    text-align: left; 
-       
+    margin: 0;
+    padding: 0;
+    text-align: left;
+
 }
 
 body{
@@ -67,13 +67,13 @@ body{
     grid-gap: 10px;
     padding: 10px;
     grid-template-areas:
-    "etiq_pres etiq_pres etiq_pres"  
+    "etiq_pres etiq_pres etiq_pres"
     "etiq_formation etiq_diplomes etiq_Expro"
     "etiq_comp etiq_comp etiq_comp"
     "etiq_en_quoi_comp etiq_en_quoi_comp etiq_divers "
     "etiq_en_quoi_comp etiq_en_quoi_comp . ";
 
-    
+
 }
 header{
     grid-area: etiq_header;
@@ -168,9 +168,9 @@ header{
     grid-gap: 10px;
     padding: 10px;
     grid-template-areas:
-    "etiq_pres etiq_pres etiq_pres"  
+    "etiq_pres etiq_pres etiq_pres"
     "etiq_FORMA etiq_FORMA etiq_FORMA";
-    
+
 }
 #mainformation{
     grid-area: etiq_FORMA;
@@ -179,7 +179,7 @@ header{
     border-radius: 15px;
     padding: 10px;
     margin: 0px 200px 10px 200px;
-    
+
 
 }
 #mainformation ul{
@@ -192,10 +192,10 @@ header{
     grid-gap: 10px;
     padding: 10px;
     grid-template-areas:
-    "etiq_pres etiq_pres etiq_pres"  
+    "etiq_pres etiq_pres etiq_pres"
     "etiq_DIP etiq_DIP etiq_DIP"
     ". etiq_brevet ."
-    ". etiq_bac ."; 
+    ". etiq_bac .";
 }
 #maindiplomes{
     grid-area: etiq_DIP;
@@ -204,7 +204,7 @@ header{
     border-radius: 15px;
     padding: 10px;
     margin: 0px 200px 10px 200px;
-    
+
 }
 #maindiplomes ul{
     text-align: start;
@@ -233,8 +233,8 @@ header{
     grid-gap: 10px;
     padding: 10px;
     grid-template-areas:
-    "etiq_pres etiq_pres etiq_pres"  
-    "etiq_EXPRO etiq_EXPRO etiq_EXPRO"; 
+    "etiq_pres etiq_pres etiq_pres"
+    "etiq_EXPRO etiq_EXPRO etiq_EXPRO";
 }
 #mainexpro{
     grid-area: etiq_EXPRO;
@@ -255,9 +255,9 @@ header{
     background-color: #5DADE2;
     width: 200px;
     position: relative;
-    bottom: 0%; 
-    left: 50%; 
-    transform: translate(-50%); 
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .bouton:hover {
@@ -286,10 +286,10 @@ footer {
   }
 
 #formation, #diplomes, #Expro {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: space-between; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     padding: 10px;
 }
 
@@ -301,7 +301,7 @@ footer {
     padding: 10px;
     margin: 0px 200px 10px 200px;
 }
-    
+
 #conteneur_gridENQUOI{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -309,8 +309,8 @@ footer {
     grid-gap: 10px;
     padding: 10px;
     grid-template-areas:
-    "etiq_pres etiq_pres etiq_pres"  
-    "etiq_enquoi etiq_enquoi etiq_enquoi"; 
+    "etiq_pres etiq_pres etiq_pres"
+    "etiq_enquoi etiq_enquoi etiq_enquoi";
 }
 
 #main_en_quoi_comp ul li {
