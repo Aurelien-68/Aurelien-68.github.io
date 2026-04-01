@@ -4,20 +4,35 @@
         <meta charset="utf-8">
         <title>Mon portfolio</title>
         <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     </head>
     <body>
         <main id="conteneur_gridENQUOI">
             <header>
-                <h1 id="titre">Henry Aurélien</h1>
-                <div id="presentation">
-                    <img src="images/img_identite.png" alt="photo" id="portrait">
-                    <ul>
-                        <li>Je m'appelle Aurélien Henry, je suis actuellement en première année de BUT RT à Colmar. <br/>Je voudrais faire la spécialité cybersécurité l'année prochaine et faire une alternance en 3ème année.</li>
-                        <li>Adresse : Colmar</li>
-                        <li>Email : <a class="lien_normal" href="mailto:aurelien.henry@uha.fr" target="_blank">aurelien.henry@uha.fr</a></li>
-                    </ul>
-                </div>
-            </header>
+    <h1 id="titre">Henry Aurélien</h1>
+
+    <div id="presentation">
+        <img src="images/img_identite.png" alt="photo" id="portrait">
+
+        <ul>
+            <li>
+                Je m'appelle Aurélien Henry, je suis actuellement en deuxième année de BUT (Bachelor Universitaire Technologique) Réseaux et Télécommunications (RT) en parcours administration systèmes et cybersécurité à l'IUT de Colmar.
+            </li>
+
+            <li>Adresse : Colmar</li>
+
+            <li><i class="fa-solid fa-car"></i> Permis B</li>
+
+            <li>
+                Email :
+                <a class="lien_normal" href="mailto:aurelien.henry@uha.fr" target="_blank">
+                    aurelien.henry@uha.fr
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
             
             <section id="main_en_quoi_comp">
                 <h2>En quoi j'ai les compétences RT ?</h2>
@@ -30,20 +45,30 @@
                 </ul>
                 <h2>Durant mes SAE en premiere année de BUT RT</h2>
                 <ul>
-                    <li>SAE1.02 : Le but de cette SAE était de créer un réseau d'une entreprise. Pour cela, nous avons utilisé EVENG. Nous devions configurer des vlan sur un switch et assurer grace a un Routeur le routage inter-Vlan. De plus, nous devions créer un service dhcp sur un serveur qui était dans un des Vlan, et enfin deployer un second Switch afi de rendre notre infrastructure réseaux plus robuste. (ACs voir pages preuves des projets)</li>
+                    <li>SAE1.02 : <br>Le but de cette SAE était de créer un réseau d'une entreprise. Pour cela, nous avons utilisé EVENG. Nous devions configurer des vlan sur un switch et assurer grace a un Routeur le routage inter-Vlan. De plus, nous devions créer un service dhcp sur un serveur qui était dans un des Vlan, et enfin deployer un second Switch afi de rendre notre infrastructure réseaux plus robuste. (ACs voir pages preuves des projets)</li>
 
-                    <li>SAE1.03 : Le but de cette SAE était de découvrir le Wifi. Pour cela, nous avons notamment dû configurer une AP WiFi et crée une Heatmap Wifi. (ACs voir pages preuves des projets)</li>
+                    <li>SAE1.03 : <br>Le but de cette SAE était de découvrir le Wifi. Pour cela, nous avons notamment dû configurer une AP WiFi et crée une Heatmap Wifi. (ACs voir pages preuves des projets)</li>
 
-                    <li>SAE1.04 : Creation d'un site en HTML/CSS pour se présenter et presenter son parcours. (ACs voir pages preuves des projets)</li>
+                    <li>SAE 1.04 :<br> Creation d'un site en HTML/CSS pour se présenter et presenter son parcours. (ACs voir pages preuves des projets)</li>
 
-                    <li>SAE1.05 : Création d’un outil de « reporting » qui permet localiser les gros fichiers du disque. Pour cela, nous avons dû utiliser python et crée plusieurs scripts PowerShell, un pour sélectionner le repertoire de base, un second pour analyser le repertoire sélectionner, puis un troisième pour afficher le résultat sous forme de "graphique camembert". (ACs voir pages preuves des projets)</li>
+                    <li>SAE 1.05 : <br>Création d’un outil de « reporting » qui permet localiser les gros fichiers du disque. Pour cela, nous avons dû utiliser python et crée plusieurs scripts PowerShell, un pour sélectionner le repertoire de base, un second pour analyser le repertoire sélectionner, puis un troisième pour afficher le résultat sous forme de "graphique camembert". (ACs voir pages preuves des projets)</li>
 
-                    <li>SAE 2.01 : Cette SAE avait pour objectif de consolider notre savoir-faire sur le matériel réseau de niveau deux (commutateur) et trois (routeur). Pour cela, nous avons travaillé de manière individuelle et nous avons utilisé le logiciel GNS3. Nous avons dû créer un réseau avec un serveur DHCP, un serveur FTP, un serveur Web, et des ACLs afin d'assurer la sécurité du réseau. (ACs voir pages preuves des projets)</li>
+                    <li>SAE 2.01 : <br>Cette SAE avait pour objectif de consolider notre savoir-faire sur le matériel réseau de niveau deux (commutateur) et trois (routeur). Pour cela, nous avons travaillé de manière individuelle et nous avons utilisé le logiciel GNS3. Nous avons dû créer un réseau avec un serveur DHCP, un serveur FTP, un serveur Web, et des ACLs afin d'assurer la sécurité du réseau. (ACs voir pages preuves des projets)</li>
 
-                    <li>SAE2.02 : Création d'une Web Radio portable avec un ESP32 et un VS1053. Son but était de pouvoir écouter en stéréo par casque ou par haut-parleurs des stations de radio internet codées en mp3. Nous avons utilisé MQTT afin d'avoir le choix des stations, le volume, la tonalité et l’effet de spatialisation du son depuis notre téléphone. (ACs voir pages preuves des projets)</li>
+                    <li>SAE2.02 : Création d'une Web Radio portable avec un ESP32 et un VS1053.<br> Son but était de pouvoir écouter en stéréo par casque ou par haut-parleurs des stations de radio internet codées en mp3. Nous avons utilisé MQTT afin d'avoir le choix des stations, le volume, la tonalité et l’effet de spatialisation du son depuis notre téléphone. (ACs voir pages preuves des projets)</li>
 
-                    <li>SAE 2.03 : Cette SAE avait pour objectif de fournir une interface de gestion du trafic aérien entre des aéroports. Le gestionnaire pourra ajouter des aéroports, des avions des vols des compagnies, etc. Nous étions part groupe de trois personnes. Nous avons dû créer un site avec un CRUD pour chaques types de données, de plus nous devions créer une machine virtuelle afin d'héberger le site ainsi que sa base de données SQL. (ACs voir pages preuves des projets)</li>
+                    <li>SAE 2.03 : <br>Cette SAE avait pour objectif de fournir une interface de gestion du trafic aérien entre des aéroports. Le gestionnaire pourra ajouter des aéroports, des avions des vols des compagnies, etc. Nous étions part groupe de trois personnes. Nous avons dû créer un site avec un CRUD pour chaques types de données, de plus nous devions créer une machine virtuelle afin d'héberger le site ainsi que sa base de données SQL. (ACs voir pages preuves des projets)</li>
 
+                    <li>SAE integrative: </li>
+
+                    <li>SAE 3.01: Mettre en oeuvre un système de transmission <br> Le but de cette SAE était de concevoir et réaliser une prise électrique connectée en Wifi, contrôlable via un site Web et une application Android. Nous avons conçu la carte électronique avec EasyEDA, choisi les composants selon la taille, le poids, la consommation et le prix, et mis en place le contrôle ON/OFF de la prise avec retour d’état via LED et interfaces logicielles. Les utilisateurs pouvaient également définir des plages horaires d’activation des prises depuis le site ou l’application. Cette SAE m’a permis de développer des compétences en électronique, en programmation embarquée et en développement d’interfaces Web et mobiles. (ACs voir pages preuves des projets)</li>
+
+                    <li>SAE 3.02: Développer des applications communicantes <br> Le but de cette SAE était de concevoir un système de communication anonyme entre plusieurs clients grâce à un routage en oignon. Nous avons utilisé Python pour la logique réseau, MariaDB pour la gestion des clés et Qt pour l’interface graphique. Nous avons mis en place le routage multi-sauts, la gestion multithread, le chiffrement des messages et l’anonymisation par couches. (ACs voir pages preuves des projets)</li>
+
+                    <li>SAE 3.Cyber.03: Concevoir un réseau informatique sécurisé multi-sites.<br> Le but de cette SAE était de concevoir et déployer une architecture réseau sécurisée pour deux entreprises multi-sites. Pour cela, nous avons utilisé GNS3 afin de simuler les routeurs, commutateurs et serveurs. Nous avons mis en place des VLAN, du routage inter-VLAN, de la redondance (VRRP, MSTP), des services DNS, Web et Mail, ainsi qu’une interconnexion MPLS-VPN avec BGP. (ACs voir pages preuves des projets)</li>
+
+                    <li>SAE 3.Cyber.04: Découvrir le pentesting <br> Elle avait pour but de nous faire découvrir des méthodes en pentest et
+                        Nous devions faire des challenges sur ROOT.ME pro, qui étaient dans un module donné par le professeur. (ACs voir pages preuves des projets)</li>
                 </ul>
                 <br>
 
