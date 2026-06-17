@@ -191,7 +191,7 @@ header {
 #preuves1, #preuves2, #preuves3, #preuves4,
 #preuves5, #preuves6, #preuves7, #preuves8,
 #preuves9, #preuves10, #preuves11, #preuves12,
-#resbrevet, #resbac {
+#resbrevet, #resbac, #preuves_SAE_integrative {
     background: var(--gris-clair);
     border: 1.5px solid var(--gris-moyen);
     border-radius: var(--radius);
@@ -378,6 +378,7 @@ header { grid-area: etiq_pres; }
         "etiq_p6"
         "etiq_p7"
         "etiq_p8"
+        "etiq_p13"
         "etiq_p9"
         "etiq_p10"
         "etiq_p11"
@@ -407,10 +408,11 @@ header { grid-area: etiq_pres; }
 #preuves10 { grid-area: etiq_p10; }
 #preuves11 { grid-area: etiq_p11; }
 #preuves12 { grid-area: etiq_p12; }
+#preuves_SAE_integrative { grid-area: etiq_p13; }
 
 #preuves1, #preuves2, #preuves3, #preuves4,
 #preuves5, #preuves6, #preuves7, #preuves8,
-#preuves9, #preuves10, #preuves11, #preuves12 {
+#preuves9, #preuves10, #preuves11, #preuves12, #preuves_SAE_integrative {
     margin: 0 120px;
     text-align: start;
     transition: box-shadow var(--transition), transform var(--transition);
@@ -418,7 +420,7 @@ header { grid-area: etiq_pres; }
 
 #preuves1:hover, #preuves2:hover, #preuves3:hover, #preuves4:hover,
 #preuves5:hover, #preuves6:hover, #preuves7:hover, #preuves8:hover,
-#preuves9:hover, #preuves10:hover, #preuves11:hover, #preuves12:hover {
+#preuves9:hover, #preuves10:hover, #preuves11:hover, #preuves12:hover, #preuves_SAE_integrative:hover {
     box-shadow: var(--ombre-forte);
     transform: translateY(-2px);
 }
