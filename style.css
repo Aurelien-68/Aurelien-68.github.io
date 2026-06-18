@@ -510,6 +510,30 @@ header { grid-area: etiq_pres; }
     line-height: 1.45;
 }
 
+/* === BOUTON PREUVE (inline dans les listes de projets) === */
+.bouton-preuve {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 18px;
+    background: linear-gradient(90deg, var(--bleu-clair) 0%, var(--bleu-medium) 100%);
+    color: var(--bleu-fonce);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 0.8em;
+    letter-spacing: 0.03em;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(41,128,185,0.12);
+    transition: background var(--transition), box-shadow var(--transition), transform var(--transition), color var(--transition);
+}
+
+.bouton-preuve:hover {
+    background: linear-gradient(90deg, var(--bleu-principal) 0%, var(--bleu-fonce) 100%);
+    color: var(--blanc);
+    box-shadow: 0 4px 14px rgba(41,128,185,0.24);
+    transform: translateY(-1px);
+}
+
 /* === DOWNLOAD LINK === */
 .download-link {
     display: inline-block;
