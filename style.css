@@ -558,6 +558,60 @@ header { grid-area: etiq_pres; }
     font-size: 0.95em;
 }
 
+/* === LIEN VERS PRÉSENTATION DES UE (3 variantes proposées) === */
+
+/* Option 1 : lien texte souligné discret */
+.lien-ue-texte {
+    display: inline-block;
+    margin: 10px auto 4px auto;
+    color: var(--bleu-principal);
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 0.95em;
+    transition: color var(--transition);
+}
+.lien-ue-texte:hover { color: var(--bleu-fonce); }
+
+/* Option 2 : mini-bouton (même style que .bouton mais réduit) */
+.mini-bouton {
+    display: inline-block;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 18px;
+    background: linear-gradient(90deg, var(--bleu-principal) 0%, var(--bleu-medium) 100%);
+    color: var(--blanc);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 0.8em;
+    letter-spacing: 0.03em;
+    margin: 10px auto 4px auto;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(41,128,185,0.14);
+    transition: background var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+.mini-bouton:hover {
+    background: linear-gradient(90deg, var(--bleu-fonce) 0%, var(--bleu-principal) 100%);
+    box-shadow: 0 4px 14px rgba(41,128,185,0.22);
+    transform: translateY(-1px);
+}
+
+/* Option 3 : lien avec icône (info) */
+.lien-ue-icone {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 10px auto 4px auto;
+    color: var(--bleu-principal);
+    font-weight: 600;
+    font-size: 0.95em;
+    transition: color var(--transition);
+}
+.lien-ue-icone i {
+    font-size: 0.95em;
+}
+.lien-ue-icone:hover { color: var(--bleu-fonce); }
+
 /* === BOUTON PREUVE (inline dans les listes de projets) === */
 .bouton-preuve {
     display: inline-block;
