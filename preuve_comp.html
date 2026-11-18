@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -329,7 +330,24 @@
                 <a href="documents/Projet_LoraWan_SAE501_FI.pdf" download class="download-link">
                     Télécharger le sujet (PDF)
                 </a>
+                <button type="button" class="btn-images" onclick="ouvrirImages('galerie-sae501')">
+                    <i class="fa-solid fa-images"></i> Voir les images
+                </button>
             </section>
+
+            <div class="galerie" id="galerie-sae501" onclick="if (event.target === this) fermerImages('galerie-sae501')">
+                <button type="button" class="galerie-fermer" onclick="fermerImages('galerie-sae501')" aria-label="Fermer">&times;</button>
+                <div class="galerie-contenu">
+                    <figure>
+                        <img src="images/sae501_materiel.jpg" alt="Matériel de la SAE 5.01 : deux modules Pycom avec antennes, Raspberry Pi et sujet ouvert sur l'ordinateur">
+                        <figcaption>Matériel utilisé : deux modules Pycom avec antennes LoRa et un Raspberry Pi.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/sae501_nodered_carte.png" alt="Flow Node-RED et carte du véhicule à Colmar">
+                        <figcaption>Flow Node-RED (uplink TTN, détection veille/réveil, SMS) et carte affichant la position du véhicule.</figcaption>
+                    </figure>
+                </div>
+            </div>
 
 
             <div class="retour-accueil">
@@ -342,6 +360,22 @@
             </div>
 
         </main>
+
+        <script>
+            function ouvrirImages(id) {
+                document.getElementById(id).classList.add('ouverte');
+                document.body.style.overflow = 'hidden';
+            }
+            function fermerImages(id) {
+                document.getElementById(id).classList.remove('ouverte');
+                document.body.style.overflow = '';
+            }
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') {
+                    document.querySelectorAll('.galerie.ouverte').forEach(function (g) { fermerImages(g.id); });
+                }
+            });
+        </script>
     </body>
         <footer><p>Web-design : Henry Aurélien</p></footer>
 

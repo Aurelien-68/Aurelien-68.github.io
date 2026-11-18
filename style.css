@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
 
 /* === VARIABLES === */
@@ -190,7 +191,7 @@ header {
 #main_en_quoi_comp,
 #preuves1, #preuves2, #preuves3, #preuves4,
 #preuves5, #preuves6, #preuves7, #preuves8,
-#preuves9, #preuves10, #preuves11, #preuves12,
+#preuves9, #preuves10, #preuves11, #preuves12, #preuves13,
 #resbrevet, #resbac, #preuves_SAE_integrative {
     background: var(--gris-clair);
     border: 1.5px solid var(--gris-moyen);
@@ -394,6 +395,7 @@ header { grid-area: etiq_pres; }
         "etiq_p10"
         "etiq_p11"
         "etiq_p12"
+        "etiq_p14"
         "etiq_btn";
 }
 
@@ -419,11 +421,12 @@ header { grid-area: etiq_pres; }
 #preuves10 { grid-area: etiq_p10; }
 #preuves11 { grid-area: etiq_p11; }
 #preuves12 { grid-area: etiq_p12; }
+#preuves13 { grid-area: etiq_p14; }
 #preuves_SAE_integrative { grid-area: etiq_p13; }
 
 #preuves1, #preuves2, #preuves3, #preuves4,
 #preuves5, #preuves6, #preuves7, #preuves8,
-#preuves9, #preuves10, #preuves11, #preuves12, #preuves_SAE_integrative {
+#preuves9, #preuves10, #preuves11, #preuves12, #preuves13, #preuves_SAE_integrative {
     margin: 0 120px;
     text-align: start;
     transition: box-shadow var(--transition), transform var(--transition);
@@ -431,7 +434,7 @@ header { grid-area: etiq_pres; }
 
 #preuves1:hover, #preuves2:hover, #preuves3:hover, #preuves4:hover,
 #preuves5:hover, #preuves6:hover, #preuves7:hover, #preuves8:hover,
-#preuves9:hover, #preuves10:hover, #preuves11:hover, #preuves12:hover, #preuves_SAE_integrative:hover {
+#preuves9:hover, #preuves10:hover, #preuves11:hover, #preuves12:hover, #preuves13:hover, #preuves_SAE_integrative:hover {
     box-shadow: var(--ombre-forte);
     transform: translateY(-2px);
 }
@@ -667,4 +670,97 @@ footer {
 
 .btn-video i {
     margin-right: 8px;
+}
+
+/* === BOUTON "VOIR LES IMAGES" + GALERIE (lightbox) === */
+.btn-images {
+    display: inline-block;
+    margin-top: 14px;
+    margin-left: 8px;
+    padding: 9px 20px;
+    border: none;
+    background: linear-gradient(90deg, var(--bleu-clair), var(--bleu-medium));
+    color: var(--bleu-fonce);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 0.88em;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(41,128,185,0.18);
+    transition: background var(--transition), box-shadow var(--transition), transform var(--transition), color var(--transition);
+}
+
+.btn-images:hover {
+    background: linear-gradient(90deg, var(--bleu-principal), var(--bleu-fonce));
+    color: var(--blanc);
+    box-shadow: 0 5px 16px rgba(41,128,185,0.28);
+    transform: translateY(-2px);
+}
+
+.btn-images i {
+    margin-right: 8px;
+}
+
+.galerie {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(18, 32, 45, 0.88);
+    overflow-y: auto;
+    padding: 50px 20px 30px 20px;
+}
+
+.galerie.ouverte {
+    display: block;
+}
+
+.galerie-contenu {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.galerie figure {
+    margin: 0;
+}
+
+.galerie img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: var(--ombre-forte);
+    background: var(--blanc);
+}
+
+.galerie figcaption {
+    margin-top: 8px;
+    color: var(--blanc);
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.galerie-fermer {
+    position: fixed;
+    top: 12px;
+    right: 22px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: var(--blanc);
+    color: var(--bleu-fonce);
+    font-size: 1.7em;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: var(--ombre-forte);
+    transition: background var(--transition), color var(--transition);
+}
+
+.galerie-fermer:hover {
+    background: var(--bleu-principal);
+    color: var(--blanc);
 }
