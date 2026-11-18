@@ -18,7 +18,7 @@
 
         <ul>
             <li>
-                Je m'appelle Aurélien Henry, je suis actuellement en deuxième année de BUT (Bachelor Universitaire Technologique) Réseaux et Télécommunications (RT) en parcours cybersécurité à l'IUT de Colmar.Je suis en recherche de stage du lundi 22 mars 2027 au vendredi 25 juin 2027.
+                Je m'appelle Aurélien Henry, je suis actuellement en troisième année de BUT (Bachelor Universitaire Technologique) Réseaux et Télécommunications (RT) en parcours cybersécurité à l'IUT de Colmar.Je suis en recherche de stage du lundi 22 mars 2027 au vendredi 25 juin 2027.
             </li>
 
             <li>Adresse : Colmar</li>
@@ -41,13 +41,25 @@
             <section id="preuves1">
                 <h3>Le projet Course en Cours</h3>
                 <p>Durant mon année de 1 ère STI2D, j'ai participé au projet Course en cours. Nous étions une équipe de 5 personnes. Le but était de créer une voiture miniature pour affronter d'autres équipes sur une course en ligne droite. Pour cela, nous devions choisir un thème, trouver des sponsors et créer un stand. Pour le thème, nous avons choisi le film "Le Mans 66" qui raconte la bataille entre Ford et Ferrari pour la victoire aux 24 heures du Mans. J'étais en charge de la partie informatique et numérique, c'est pour cela que j'ai créé un jeu en Python pour le stand. Le but de ce jeu était d'appuyer à répétition sur un bouton pour faire avancer une voiture et être plus rapide que son adversaire.</p>
-                <img src="images/stand_CEC.png" id="stand_CEC">
                 <p>Ce projet m'a permis de développer mes compétences d'organisation et de communication en équipe. Cela a également amélioré mes compétences en programmation Python.</p>
                 <p class="competence-label">Compétence du BUT RT développée :</p>
                 <div class="ue-tags">
                     <span class="ue-tag">UE3 [Programmer]</span>
                 </div>
+                <button type="button" class="btn-images" onclick="ouvrirImages('galerie-cec')">
+                    <i class="fa-solid fa-images"></i> Voir l'image
+                </button>
             </section>
+
+            <div class="galerie" id="galerie-cec" onclick="if (event.target === this) fermerImages('galerie-cec')">
+                <button type="button" class="galerie-fermer" onclick="fermerImages('galerie-cec')" aria-label="Fermer">&times;</button>
+                <div class="galerie-contenu">
+                    <figure>
+                        <img src="images/stand_CEC.png" alt="Stand de l'équipe au concours Course en Cours, thème Le Mans 66">
+                        <figcaption>Stand de l'équipe au concours Course en Cours (thème « Le Mans 66 »).</figcaption>
+                    </figure>
+                </div>
+            </div>
 
             <section id="preuves2">
                 <h3>SAE1.02 S'initier aux Réseaux Informatiques</h3>
@@ -339,11 +351,11 @@
                 <button type="button" class="galerie-fermer" onclick="fermerImages('galerie-sae501')" aria-label="Fermer">&times;</button>
                 <div class="galerie-contenu">
                     <figure>
-                        <img src="images/sae501_materiel.jpg" alt="Matériel de la SAE 5.01 : deux modules Pycom avec antennes, Raspberry Pi et sujet ouvert sur l'ordinateur">
+                        <img src="images/sae501-gnss-materiel.jpg" alt="Matériel de la SAE 5.01 : deux modules Pycom avec antennes, Raspberry Pi et sujet ouvert sur l'ordinateur">
                         <figcaption>Matériel utilisé : deux modules Pycom avec antennes LoRa et un Raspberry Pi.</figcaption>
                     </figure>
                     <figure>
-                        <img src="images/sae501_nodered_carte.png" alt="Flow Node-RED et carte du véhicule à Colmar">
+                        <img src="images/sae501-nodered-carte.png" alt="Flow Node-RED et carte du véhicule à Colmar">
                         <figcaption>Flow Node-RED (uplink TTN, détection veille/réveil, SMS) et carte affichant la position du véhicule.</figcaption>
                     </figure>
                 </div>
